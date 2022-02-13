@@ -44,9 +44,10 @@ const handleLogout=()=>{
           </>
           }
          
-        </ul>  
+        </ul> 
+        <Clock/> 
       </div>
-      <Clock/>
+    
     </nav>
   )
 }

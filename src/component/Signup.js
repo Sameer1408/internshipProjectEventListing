@@ -31,7 +31,7 @@ let onChange=(e)=>{
 
     return (
         <div className="container my-3">
-        <h2>Create an account on Inotebook</h2>
+        <h2>Create an account on Event Listing</h2>
            <form onSubmit={handleSubmit}>
      <div className="form-group">
     <label for="exampleInputEmail1">Enter Name</label>
