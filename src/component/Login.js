@@ -45,7 +45,7 @@ let onChange=(e)=>{
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="password" name="password" onChange={onChange} value={cred.password} placeholder="Password"/>
   </div>
-  <Link to="/login" style={{marginRight:"20px"}}>Craete an account</Link>
+  <Link to="/signup" style={{marginRight:"20px"}}>Craete an account</Link>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
         </div>
