@@ -1,7 +1,10 @@
 import React,{useState} from 'react'
 import { useHistory } from 'react-router';
+import {
+  useLocation,Link
+  } from "react-router-dom";
 
-export default function Login() {
+export default function Login(props) {
 let history =  useHistory();
 const [cred, setcred] = useState({email:"",password:""})
 
@@ -21,6 +24,8 @@ const handleSubmit=async(e)=>{
           localStorage.setItem('token',json.authtoken)
           history.push('/')
           window.location.reload();
+      }else{
+        props.showAlret("sorry invalid credentials",'warning')
       }
       console.log(json)
 }
@@ -40,6 +45,7 @@ let onChange=(e)=>{
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="password" name="password" onChange={onChange} value={cred.password} placeholder="Password"/>
   </div>
+  <Link to="/login" style={{marginRight:"20px"}}>Craete an account</Link>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
         </div>

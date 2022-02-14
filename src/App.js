@@ -42,7 +42,7 @@ function App() {
             <AddEvent showAlret={showAlret}/>
            </Route>
            <Route exact path="/login">
-            <Login/>
+            <Login showAlret={showAlret}/>
            </Route>
            <Route exact path="/signup">
             <Signup/>
